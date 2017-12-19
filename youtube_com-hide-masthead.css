@@ -1,0 +1,18 @@
+@-moz-document domain("www.youtube.com") {
+/**
+ * Hide Masthead (search bar header) on YouTube.com
+ * @description Unless hovered or focus, hides masthead on YouTube so it
+ *              doesn't cover the video.
+ * @version     1.0.0
+ * @url         https://github.com/PeteDevoy/Hide-Masthead-user-style-for-YouTube.com
+ */
+
+#masthead-container {
+  opacity:0;
+  transition: opacity .1s;
+}
+
+#masthead-container:hover, #masthead-container:focus-within {
+  opacity:1;
+}
+}
